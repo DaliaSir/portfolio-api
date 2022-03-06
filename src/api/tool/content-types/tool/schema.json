@@ -31,6 +31,12 @@
       "relation": "manyToOne",
       "target": "api::tools-category.tools-category",
       "inversedBy": "tool"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "tools"
     }
   }
 }
